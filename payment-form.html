@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="payment-form-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h1>Payment Form</h1>
+        <h2>User information</h2>
+        <p>
+          Name : *
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </p>
+        <fieldset>
+          <legend>Gender : *</legend>
+          <p class="radios">
+            Male <input type="radio" name="gender" required />
+          </p>
+          <p class="radios">
+            Female <input type="radio" name="gender" required />
+          </p>
+          <p class="radios">
+            Other <input type="radio" name="gender" required />
+          </p>
+        </fieldset>
+        <p>
+          Address : *
+          <textarea
+            name="address"
+            cols="30"
+            rows="6"
+            placeholder="Enter your address"
+            required
+          ></textarea>
+        </p>
+        <p>
+          State : *
+          <input type="text" placeholder="Enter your state" required />
+        </p>
+        <p>
+          Pincode : *
+          <input type="number" placeholder="Enter your pincode" required />
+        </p>
+        <p>
+          Email : *
+          <input
+            type="email"
+            name="Email"
+            placeholder="Enter a valid email"
+            required
+          />
+        </p>
+        <br />
+        <hr />
+        <h2>Payment details</h2>
+        <p>
+          Card type : *
+          <select name="card type" required>
+            <option value="">--select card type--</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Master card">Master card</option>
+            <option value="Visa">Visa</option>
+            <option value="American Express">American Express</option>
+            <option value="UnionPay">UnionPay</option>
+            <option value="Discover">Discover</option>
+          </select>
+        </p>
+        <p>
+          Card Number : *
+          <input
+            type="number"
+            name="card number"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+        </p>
+        <p>
+          Name On Card : *
+          <input
+            type="text"
+            name="name on card "
+            placeholder="Enter card holder name"
+            required
+          />
+        </p>
+        <p>
+          Expiry : *
+          <input type="date" name="Expiry" required />
+        </p>
+        <p>
+          CVV : *
+          <input type="password" name="cvv" placeholder="eg.1234" required />
+        </p>
+        <input type="submit" value="Pay Now" />
+        <input type="button" value="Back" />
+      </form>
+    </div>
+  </body>
+</html>
